@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="styles.css" rel="stylesheet"/>
+        <title>Survey Form</title>
+
+    </head>
+    <body>
+        <main>
+            <header><h1 id="title">[Your Company Here] Survey Form</h1>
+            <p id="description" class="thanks">Thank you for taking the time to help us improve</p></header>
+        <div class="form">
+            <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+                <div class="fields">
+                    <label id="name-label">Name</label><input class="textInput" id="name" type="field" name="name" placeholder="Enter your name" required />
+                </div>                  
+                <div class="fields">
+                    <label id="email-label">Email</label><input class="textInput" id="email" type="email" name="email" placeholder="Enter your email" required />
+                </div>
+                <div class="fields">
+                    <label id="number-label"><p>Age (<small>optional</small>)</p><input class="textInput" id="number" type="number" name="age" maxlength="2" min="0" max="99" placeholder="Enter your age" required /></label>
+                </div>
+                <div class="fields"><label>Which option best describes your current role?</label>
+                    <select id="dropdown" type="search" name="role" required>
+                        <option disabled selected value>Select current role: </option>
+                        <option value="student">Student</option>
+                        <option value="job">Full time job</option>
+                        <option value="learner">Full time learner</option>
+                        <option value="no">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="fields">
+                    <label> Would you recommend [Your Company Here] to a friend?</label>
+                    <label for="definitely"><input type="radio" id="definitely" name="recommend" value="definitely" checked /> Definitely</label>
+                    <label for="maybe"><input type="radio" id="maybe" name="recommend" value="maybe" /> Maybe</label>
+                    <label for="notSure"><input type="radio" id="notSure" name="recommend" value="notSure" /> Not Sure</label>
+                </div>
+                <div class="fields">
+                    <label>What is your favorite feature of [Your Company Here]?</label>
+                    <select id="favFeature" type="search" name="favFeature" required>
+                        <option disabled selected value class="unselected">Select an option: </option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="openSource">Open Source</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="fields">
+                    <label>What would you like to see improved? <small>(Check all that apply)</small></label>
+                    <label for="frontEnd"><input type="checkbox" id="frontEnd" value="frontEnd"> Front End Projects</label>
+                    <label for="backEnd"><input type="checkbox" id="backEnd" value="backEnd"> Back-end Projects</label>
+                    <label for="dataVisualization"><input type="checkbox" id="dataVisualization" value="dataVisualization"> Data Visualization</label>
+                    <label for="newChallenges"><input type="checkbox" id="newChallenges" value="newChallenges"> Challenges</label>
+                    <label for="openSourceCommunity"><input type="checkbox" id="openSourceCommunity" value="openSourceCommunity"> Open Source Community</label>
+                    <label for="gitterHelpRooms"><input type="checkbox" id="gitterHelpRooms" value="gitterHelpRooms"> Gitter help rooms</label>
+                    <label for="videos"><input type="checkbox" id="videos" value="videos"> Videos</label>
+                    <label for="cityMeetups"><input type="checkbox" id="cityMeetups" value="cityMeetups"> City Meetups</label>
+                    <label for="wiki"><input type="checkbox" id="wiki" value="wiki"> Wiki</label>
+                    <label for="forum"><input type="checkbox" id="forum" value="forum"> Forum</label>
+                    <label for="additionalCourses"><input type="checkbox" id="additionalCourses" value="additionalCourses"> Additional Courses
+                    </label>
+                </div>
+                <div class="fields">
+                    <label>Any comments or suggestions?</label>
+                    <textarea id="suggestions" placeholder="Type your suggestions here"></textarea>
+                </div>  
+                <div class="fields">
+                    <input type="submit" id="submit" class="submit">
+                </div>               
+            </form>
+        </div>
+        </main>
+    </body>
+</html>
